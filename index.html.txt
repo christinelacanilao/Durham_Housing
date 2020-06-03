@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Housing Starts in the Durham Region (2010-2019)</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      var locationPath = location.pathname.replace(/\/[^\/]+$/, "");
+      window.dojoConfig = {
+        packages: [
+          {
+            name: "app",
+            location: locationPath + "/app"
+          }
+        ]
+      };
+    </script>
+    <script src="https://js.arcgis.com/4.11"></script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+
+    <div id="PopUpWindow" class="></div>
+  </body>
+
+  <footer>
+    <div class="footer-bottom">
+      <span>Canada Mortgage and Housing Corporation (CMHC) &copy; <script src="app/copyright.js"></script></span>
+      <span id="Canada_logo">
+        <a href="https://www.cmhc-schl.gc.ca/en">
+          <img src="https://assets.cmhc-schl.gc.ca/sf/project/cmhc/home/csps_canadawordmark_blackred.png?rev=a8042423-97e6-487b-ade8-0b803c5b1ac1&h=58&w=240&la=en" alt="Canada" title>
+        </a>
+      </span>
+  </footer>
+</html>

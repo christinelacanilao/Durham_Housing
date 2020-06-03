@@ -1,0 +1,7 @@
+.footer-bottom {
+    border-top: 1px solid #606060;
+    padding: 25px 0;
+    margin-top: 35px;
+    font-size: 0.95em;
+    line-height: 2em;
+}
