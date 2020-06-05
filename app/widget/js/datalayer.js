@@ -29,7 +29,7 @@ require([
                   content: "The census boundary has {infilling2010_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year10Layer);
+      myMap.add(year10Layer);
       
       // CensusTracts Feature Layer, 2011 (polygon)
       var year11Layer = new FeatureLayer({
@@ -40,7 +40,7 @@ require([
                   content: "The census boundary has {infilling2011_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year11Layer);
+      myMap.add(year11Layer);
     
       // CensusTracts Feature Layer, 2012 (polygon)
       var year12Layer = new FeatureLayer({
@@ -51,7 +51,7 @@ require([
                   content: "The census boundary has {infilling2012_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year12Layer);
+      myMap.add(year12Layer);
     
       // CensusTracts Feature Layer, 2013 (polygon)
       var year13Layer = new FeatureLayer({
@@ -62,7 +62,7 @@ require([
                   content: "The census boundary has {infilling2013_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year13Layer);
+      myMap.add(year13Layer);
     
       // CensusTracts Feature Layer, 2014 (polygon)
       var year14Layer = new FeatureLayer({
@@ -73,7 +73,7 @@ require([
                   content: "The census boundary has {infilling2014_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year14Layer);
+      myMap.add(year14Layer);
 
       // CensusTracts Feature Layer, 2015 (polygon)
       var year15Layer = new FeatureLayer({
@@ -84,7 +84,7 @@ require([
                   content: "The census boundary has {infilling2015_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year15Layer);
+      myMap.add(year15Layer);
     
       // CensusTracts Feature Layer, 2016 (polygon)
       var year16Layer = new FeatureLayer({
@@ -95,7 +95,7 @@ require([
                   content: "The census boundary has {infilling2016_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year16Layer);
+      myMap.add(year16Layer);
     
       // CensusTracts Feature Layer, 2017 (polygon)
       var year17Layer = new FeatureLayer({
@@ -106,7 +106,7 @@ require([
                   content: "The census boundary has {infilling2017_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year17Layer);
+      myMap.add(year17Layer);
     
       // CensusTracts Feature Layer, 2018 (polygon)
       var year18Layer = new FeatureLayer({
@@ -117,7 +117,7 @@ require([
                   content: "The census boundary has {infilling2018_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year18Layer);
+      myMap.add(year18Layer);
 
       // CensusTracts Feature Layer, 2019 (polygon)
       var year19Layer = new FeatureLayer({
@@ -128,6 +128,6 @@ require([
                   content: "The census boundary has {infilling2019_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      map.add(year19Layer); 
+      myMap.add(year19Layer); 
  
 });
