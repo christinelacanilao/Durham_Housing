@@ -15,7 +15,6 @@ require([
       var view = new MapView({
             container: "viewDiv",
             map: myMap,
-                  layers: [ year19Layer, year18Layer, year17Layer, year16Layer, year15Layer, year14Layer, year13Layer, year12Layer, year11Layer, year10Layer ]
             center: [-78.871866,43.914656],
             zoom: 10
       });
