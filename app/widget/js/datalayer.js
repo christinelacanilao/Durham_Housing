@@ -1,20 +1,20 @@
 require([
-      "esri/WebMap",
+      "esri/Map",
       "esri/views/MapView",
       "esri/layers/FeatureLayer",
       "dojo/dom",
       "dojo/domReady!"
     
-    ], function(WebMap, MapView, FeatureLayer)  {
+    ], function(Map, MapView, FeatureLayer)  {
     
-      // Map view set up
-      var webmap = new WebMap({
+      // Creates a Map instance
+      var myMap = new Map({
             basemap: "gray-vector"
       });
       
       var view = new MapView({
             container: "viewDiv",
-            map: map,
+            map: myMap,
             center: [-78.871866,43.914656],
             zoom: 10
       });
@@ -22,12 +22,13 @@ require([
       // CensusTracts Feature Layer, 2010 (polygon)
       var year10Layer = new FeatureLayer({
             url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/South_Durham_Region_Housing_From_2010_to_2019/FeatureServer/9",
+            
             popupTemplate: {        // Enable a popup
                   title: "{CensusBoundary2010_CTNAME}",       // Show attribute value
                   content: "The census boundary has {infilling2010_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year10Layer);
+      map.add(year10Layer);
       
       // CensusTracts Feature Layer, 2011 (polygon)
       var year11Layer = new FeatureLayer({
@@ -38,7 +39,7 @@ require([
                   content: "The census boundary has {infilling2011_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year11Layer);
+      map.add(year11Layer);
     
       // CensusTracts Feature Layer, 2012 (polygon)
       var year12Layer = new FeatureLayer({
@@ -49,18 +50,18 @@ require([
                   content: "The census boundary has {infilling2012_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year12Layer);
+      map.add(year12Layer);
     
       // CensusTracts Feature Layer, 2013 (polygon)
       var year13Layer = new FeatureLayer({
-            url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/South_Durham_Region_Housing_From_2010_to_2019/FeatureServer/6".
+            url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/South_Durham_Region_Housing_From_2010_to_2019/FeatureServer/6",
             
              popupTemplate: {        // Enable a popup
                   title: "{CensusBoundary2013_CTNAME}",       // Show attribute value
                   content: "The census boundary has {infilling2013_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year13Layer);
+      map.add(year13Layer);
     
       // CensusTracts Feature Layer, 2014 (polygon)
       var year14Layer = new FeatureLayer({
@@ -71,7 +72,7 @@ require([
                   content: "The census boundary has {infilling2014_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year14Layer);
+      map.add(year14Layer);
 
       // CensusTracts Feature Layer, 2015 (polygon)
       var year15Layer = new FeatureLayer({
@@ -82,7 +83,7 @@ require([
                   content: "The census boundary has {infilling2015_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-     webmap.add(year15Layer);
+      map.add(year15Layer);
     
       // CensusTracts Feature Layer, 2016 (polygon)
       var year16Layer = new FeatureLayer({
@@ -93,7 +94,7 @@ require([
                   content: "The census boundary has {infilling2016_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year16Layer);
+      map.add(year16Layer);
     
       // CensusTracts Feature Layer, 2017 (polygon)
       var year17Layer = new FeatureLayer({
@@ -104,7 +105,7 @@ require([
                   content: "The census boundary has {infilling2017_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year17Layer);
+      map.add(year17Layer);
     
       // CensusTracts Feature Layer, 2018 (polygon)
       var year18Layer = new FeatureLayer({
@@ -115,7 +116,7 @@ require([
                   content: "The census boundary has {infilling2018_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year18Layer);
+      map.add(year18Layer);
 
       // CensusTracts Feature Layer, 2019 (polygon)
       var year19Layer = new FeatureLayer({
@@ -126,6 +127,6 @@ require([
                   content: "The census boundary has {infilling2019_csv_SumOfUnits} housing starts."   // Display ttext in pop-up
             }
       });
-      webmap.add(year19Layer); 
+      map.add(year19Layer); 
  
 });
