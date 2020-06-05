@@ -5,10 +5,9 @@ require([
 ], function(WebMap, Home) {
 
   var home = new HomeButton({
-    map = webmap
-  }, "HomeButton");
-  home.startup();
+    view: view
+  });
 
-  // Add the widget
+  // Add the widget to the left corner of the view
   view.ui.add(home, "top-left");
 });
