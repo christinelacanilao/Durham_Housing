@@ -5,10 +5,10 @@ document.onreadystatechange = function() {
                         document.querySelector(
                                     "body").style.visibility = "hidden";
                         document.querySelector(
-                                    "#loader").style.visibility = "visible";
+                                    "lds-spinner").style.visibility = "visible";
             } else {
                         document.querySelector(
-                                    "#loader").style.display = "none";
+                                    "lds-spinner").style.display = "none";
                         document.querySelector(
                                     "body").style.visibility = "visible";
             }
